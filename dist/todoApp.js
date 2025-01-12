@@ -1,9 +1,9 @@
-import userManager from './userManager'; // Importation du gestionnaire d'utilisateurs
+import userManager from './userManager'; 
 class TodoApp {
     constructor() {
         this.tasks = [];
-        this.currentUser = null; // Stocke l'email de l'utilisateur connecté
-        this.currentUserData = null; // Contient les infos de l'utilisateur connecté
+        this.currentUser = null; 
+        this.currentUserData = null; 
         this.loadFromLocalStorage();
         this.initEventListeners();
     }
@@ -33,13 +33,11 @@ class TodoApp {
         }
     }
     initEventListeners() {
-        // Écouteurs pour les actions sur le formulaire
         const taskForm = document.getElementById('task-form');
         taskForm.addEventListener('submit', (event) => {
-            event.preventDefault(); // Empêche le rechargement de la page
+            event.preventDefault(); 
             this.addTask();
         });
-        // Écouteurs pour les actions de connexion et d'inscription
         document.getElementById('register-btn').addEventListener('click', () => this.register());
         document.getElementById('login-btn').addEventListener('click', () => this.login());
         document.getElementById('logout-btn').addEventListener('click', () => this.logout());
@@ -94,17 +92,17 @@ class TodoApp {
             description,
             status: 'pending',
             deadline,
-            owner: this.currentUser, // Utilise l'email de l'utilisateur connecté
+            owner: this.currentUser, 
         };
         this.tasks.push(task);
         this.saveToLocalStorage();
-        this.renderTasks(); // Rafraîchit la liste des tâches après ajout
+        this.renderTasks(); 
     }
     renderTasks() {
         const taskList = document.getElementById('task-list');
-        taskList.innerHTML = ''; // Vide la liste avant de la rendre
+        taskList.innerHTML = '';
         this.tasks
-            .filter((task) => task.owner === this.currentUser) // Affiche uniquement les tâches de l'utilisateur connecté
+            .filter((task) => task.owner === this.currentUser) 
             .forEach((task) => {
             const taskEl = document.createElement('div');
             taskEl.className = `task ${task.status === 'completed' ? 'completed' : ''}`;

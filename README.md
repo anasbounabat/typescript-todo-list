@@ -29,4 +29,4 @@ Cette application est conçue pour être rapide et facile à utiliser, que ce so
 ## Installation
 1. Clonez le dépôt :
    ```bash
-   git clone https://github.com/votre-utilisateur/projet-tailwind-localstorage.git
+   git clone https://github.com/anasbounabat/typescript-todo-list.git

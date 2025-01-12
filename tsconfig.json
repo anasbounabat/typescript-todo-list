@@ -1,11 +1,11 @@
 {
     "compilerOptions": {
       "target": "ES6",
-      "outDir": "./dist", // Le dossier de sortie pour les fichiers compilés
-      "rootDir": "./src", // Le dossier contenant les fichiers TypeScript
+      "outDir": "./dist",
+      "rootDir": "./src", 
       "strict": true
     },
-    "include": ["src/**/*"], // Inclure tous les fichiers TypeScript dans le dossier src
-    "exclude": ["node_modules"] // Exclure les dépendances
+    "include": ["src/**/*"], 
+    "exclude": ["node_modules"] 
   }
   
