@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/abonnement.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <title>Liste des Tâches - Todo App</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <img src="https://static.vecteezy.com/system/resources/previews/019/519/243/non_2x/to-do-list-icon-for-your-website-mobile-presentation-and-logo-design-free-vector.jpg" alt="Logo">
+      <ul class="nav">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="abonnement.html">Abonnement</a></li>
+        <li><a href="login.html"><button>Se déconnecter</button></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="header-title">
+      <div>
+        <h2>Quel Abonnement Vous Convient ?</h2>
+        <p>Choisissez parmi nos différentes options pour accéder à des fonctionnalités adaptées à vos besoins et à votre productivité.</p>
+      </div>
+      <img src="https://images.squarespace-cdn.com/content/v1/519a7bc0e4b08ccdf8f31445/1591784159824-M2MV5ZEBCV3TN13SBMIV/programmation+bin%C3%B4me" alt="Logo">
+    </div>
+    <div class="subscriptions">
+      <div class="subscription">
+        <div class="content">
+          <h2>Abonnement Essentiel</h2>
+          <p>Optimisez vos tâches quotidiennes avec un accès simple et pratique aux outils de gestion de base.</p>
+          <p>Avec cet abonnement, vous pouvez créer et gérer vos tâches, définir des rappels et organiser votre journée de manière efficace.</p>
+          <p><strong>Prix : Gratuit</strong></p>
+          <button class="button-hover color-1">Commencez dès maintenant</button>
+        </div>
+      </div>
+      <div class="subscription">
+        <div class="content">
+          <h2>Abonnement Pro</h2>
+          <p>Découvrez des fonctionnalités avancées pour gérer vos projets et tâches avec efficacité et flexibilité.</p>
+          <p>Profitez de fonctionnalités supplémentaires telles que la gestion de projets, la collaboration en équipe et des outils d'analyse avancés.</p>
+          <p><strong>Prix : 9,99€/mois</strong></p>
+          <button class="button-hover color-1">Améliorez votre productivité</button>
+        </div>
+      </div>
+      <div class="subscription">
+        <div class="content">
+          <h2>Abonnement Premium</h2>
+          <p>Profitez d'un service exclusif avec un accès complet aux outils premium et une assistance dédiée pour optimiser votre expérience.</p>
+          <p>Accédez à toutes les fonctionnalités Pro, ainsi qu'à un support prioritaire, des intégrations personnalisées et des formations exclusives.</p>
+          <p><strong>Prix : 19,99€/mois</strong></p>
+          <button class="button-hover color-1">Accédez à l'excellence</button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>À propos</h3>
+        <ul>
+          <li>Notre histoire</li>
+          <li>Équipe</li>
+          <li>Carrières</li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Support</h3>
+        <ul>
+          <li>FAQ</li>
+          <li>Contact</li>
+          <li>Assistance</li>
+        </ul>
+      </div>
+      <div class="footer-section newsletter">
+        <h3>Newsletter</h3>
+        <form>
+          <input type="email" placeholder="Votre email">
+          <button type="submit">S'abonner</button>
+        </form>
+        <h4>Suivez-nous</h4>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script>
+    gsap.from(".header-title", { duration: 1, x: -100, opacity: 0, delay: 0.5, ease: "power2.inOut" });
+    gsap.from(".subscriptions .subscription", {
+      duration: 1,
+      y: 100,
+      opacity: 0,
+      stagger: 0.2,
+      delay: 1,
+      ease: "power2.inOut"
+    });
+  </script>
+</body>
+</html>

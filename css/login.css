@@ -1,0 +1,85 @@
+
+
+.all{
+    display: flex;
+    justify-content: wrap;
+}
+form{
+    margin-left: 100px;
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+text-align: center;
+    border-radius: 10px;
+    margin-top: 150px;
+
+}
+p{
+    font-size: 13px;
+}
+h1,p{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;  /* Gras pour un effet plus impactant sur les titres */
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+#login-email , #login-password{
+    width: 50%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #6745c3;
+}
+#login-email:focus, #login-password:focus {
+    border-color: #455cc3; /* Changer la couleur de la bordure au focus */
+    box-shadow: 0 0 5px#7890fa; /* Ajouter une ombre douce autour du champ */
+    outline: none; /* Supprimer le contour par défaut du focus */
+}
+.buttons {
+    margin: 10%;
+    text-align: center;
+}
+
+/* Style principal du bouton */
+.button-hover {
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff; /* Texte blanc */
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align: center;
+    border: none;
+    background-size: 300% 100%; /* Permet au dégradé de se déplacer */
+    border-radius: 50px;
+    padding: 0; /* Enlève le padding interne pour un meilleur alignement */
+    transition: all 0.4s ease-in-out; /* Transition fluide */
+}
+
+/* Dégradé de fond lorsque le bouton est en état normal (non survolé) */
+.button-hover.color-1 {
+    background-image: linear-gradient(to right, #6745c3, #455cc3, #5e70c1, #25aae1); /* Dégradé du bleu au vert */
+    box-shadow: 0 4px 15px 0 rgba(54, 127, 236, 0.75); /* Ombre douce */
+}
+
+/* Effet au survol */
+.button-hover:hover {
+    background-position: 100% 0; /* Change la position du dégradé au survol */
+    box-shadow: 0 4px 15px rgba(65, 26, 129, 0.75); /* Ombre supplémentaire */
+    transition: all 0.4s ease-in-out; /* Assure une transition fluide */
+}
+
+/* Effet lorsque le bouton est au focus */
+.button-hover:focus {
+    outline: none; /* Supprime le contour par défaut du focus */
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Ombre bleue douce au focus */
+}
+
+/* Exemple de classe supplémentaire pour d'autres effets au survol */
+.b-hover:hover {
+    background-position: 100% 0;
+    transition: all 0.4s ease-in-out;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <title>Liste des Tâches - Todo App</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <img src="https://static.vecteezy.com/system/resources/previews/019/519/243/non_2x/to-do-list-icon-for-your-website-mobile-presentation-and-logo-design-free-vector.jpg" alt="Logo">
+      <ul class="nav">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="./abonnment.html">Abonnement</a></li>
+        <li><a href="login.html"><button>Se déconnecter</button></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+  <hr>
+  <div class="welcome-container">
+    <div class="welcome-text">
+      <h1>Bienvenue sur votre To-Do List</h1>
+      <p>
+        Gérez vos tâches facilement et efficacement. Créez des tâches à faire, marquez-les comme terminées une fois accomplies et ne perdez jamais de vue vos priorités.
+        C'est simple, rapide et pratique pour organiser votre journée et accomplir tout ce que vous devez faire !
+      </p>
+    </div>
+    <div class="welcome-img">
+      <img src="https://th.bing.com/th/id/OIP.k2DkAyw5JPrDBMgttXI1lgHaEK?pid=ImgDet&w=184&h=103&c=7&dpr=1,3" alt="To-Do List" />
+    </div>
+  </div>
+  <h3>Ajouter une tâche</h3>
+  <form id="task-form">
+    <label for="task-title">Titre :</label>
+    <input type="text" id="task-title" placeholder="Titre de la tâche" required><br>
+
+    <label for="task-desc">Description :</label>
+    <textarea id="task-desc" placeholder="Description de la tâche"></textarea><br>
+
+    <label for="task-deadline">Date limite :</label>
+    <input type="date" id="task-deadline" required><br>
+
+    <button type="submit">Ajouter une tâche</button>
+  </form>
+
+  <h2>Liste des Tâches</h2>
+  <div id="task-list"></div> <!-- L'élément pour afficher la liste des tâches -->
+ 
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>À propos</h3>
+        <ul>
+          <li>Notre histoire</li>
+          <li>Équipe</li>
+          <li>Carrières</li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Support</h3>
+        <ul>
+          <li>FAQ</li>
+          <li>Contact</li>
+          <li>Assistance</li>
+        </ul>
+      </div>
+      <div class="footer-section newsletter">
+        <h3>Newsletter</h3>
+        <form>
+          <input type="email" placeholder="Votre email">
+          <button type="submit">S'abonner</button>
+        </form>
+        <h4>Suivez-nous</h4>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="dist/app.js"></script>
+</body>
+</html>

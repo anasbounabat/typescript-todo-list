@@ -1,24 +1,32 @@
-# New Project
+# Projet avec TailwindCSS et LocalStorage
 
-> ✨ Bootstrapped with Create Snowpack App (CSA).
+## Informations sur le Groupe
+- **Membre 1** : Anas Bounabat  
+- **Membre 2** : Ilias Bounabat
 
-## Available Scripts
+## Description du Projet
+Cette application Todo App permet de gérer vos tâches quotidiennes de manière simple et intuitive.
+Vous pouvez :
 
-### npm start
+Ajouter de nouvelles tâches.
+Marquer les tâches comme terminées.
+Supprimer les tâches une fois qu'elles ne sont plus nécessaires.
+Cette application est conçue pour être rapide et facile à utiliser, que ce soit sur un ordinateur ou un appareil mobile.
 
-Runs the app in the development mode.
-Open http://localhost:8080 to view it in the browser.
+## Fonctionnalités principales
+- Ajouter une tâche : Ajoutez un titre, une description et une date limite pour une meilleure organisation.
+- Marquer une tâche comme terminée : Suivez vos progrès en cochant les tâches terminées.
+- Supprimer une tâche : Nettoyez votre liste en supprimant les tâches accomplies ou non pertinentes.
+- Interface responsive : Compatible avec tous les appareils (smartphones, tablettes, ordinateurs).
 
-The page will reload if you make edits.
-You will also see any lint errors in the console.
 
-### npm run build
+## Technologies Utilisées
+- HTML
+- CSS 
+- JavaScript 
+- TypeScript
 
-Builds a static copy of your site to the `build/` folder.
-Your app is ready to be deployed!
-
-**For the best production performance:** Add a build bundler plugin like [@snowpack/plugin-webpack](https://github.com/snowpackjs/snowpack/tree/main/plugins/plugin-webpack) or [snowpack-plugin-rollup-bundle](https://github.com/ParamagicDev/snowpack-plugin-rollup-bundle) to your `snowpack.config.mjs` config file.
-
-### Q: What about Eject?
-
-No eject needed! Snowpack guarantees zero lock-in, and CSA strives for the same.
+## Installation
+1. Clonez le dépôt :
+   ```bash
+   git clone https://github.com/votre-utilisateur/projet-tailwind-localstorage.git
